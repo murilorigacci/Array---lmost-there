@@ -62,7 +62,7 @@ let inventarioAlpha = [
 
 console.log(`Item removido: ${itemRemovido}`);
 
-console.log(`Depois do pop:`, inventarioAlpha);
+console.log(`Depois do remover:`, inventarioAlpha);
 
 // 2. Um artefato obsoleto foi removido do final da lista Beta após avaliação técnica.
 
@@ -70,4 +70,9 @@ let itemRemovidoBeta = inventarioBeta.pop()
 
 console.log(`Item removido: ${itemRemovidoBeta}`);
 
-console.log(`Depois do pop:`, inventarioBeta);
+console.log(`Depois de remover:`, inventarioBeta);
+
+// 3. Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
+
+inventarioAlpha.push(`Peças cerâmicas, Ferramentas talhadas em ossos, Itens de adorno pessoal, 7900`)
+console.log(`Depois de adicionar:`, inventarioAlpha);
