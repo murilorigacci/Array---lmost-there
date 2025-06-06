@@ -55,8 +55,19 @@ let inventarioAlpha = [
     ["Terminal de Dobra", "Alpha Centauri", 10500]
   ];
 
+  // 1. Um item duplicado foi detectado no final do inventário Alpha. Remova a cópia.
+
+
   let itemRemovido = inventarioAlpha.pop()
 
 console.log(`Item removido: ${itemRemovido}`);
 
 console.log(`Depois do pop:`, inventarioAlpha);
+
+// 2. Um artefato obsoleto foi removido do final da lista Beta após avaliação técnica.
+
+let itemRemovidoBeta = inventarioBeta.pop()
+
+console.log(`Item removido: ${itemRemovidoBeta}`);
+
+console.log(`Depois do pop:`, inventarioBeta);
