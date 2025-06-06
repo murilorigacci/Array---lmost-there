@@ -116,3 +116,26 @@ inventarioBeta.unshift(["Terminal de Dobra", "Alpha Centauri", 10500])
 console.log(`Depois de dar prioridade ao item:`, inventarioBeta);
 
 console.table(inventarioBeta)
+
+// 7. Um artefato incorreto foi inserido no topo da Alpha por engano. Ele deve ser excluído.
+
+inventarioAlpha.shift()
+console.log(`Depois de remover o primeir item:`, inventarioAlpha);
+
+console.table(inventarioAlpha)
+
+// 8. O primeiro item da Beta pertence a um museu e deve ser removido.
+
+inventarioBeta.shift()
+console.log(`Depois de remover o primeir item:`, inventarioBeta);
+
+console.table(inventarioBeta)
+
+// 9. Verifique se a “Relíquia de Zordon” está presente no inventário Beta. (nível hard)
+
+const nomeItens = inventarioBeta.map((item) => item[0])
+
+const reliquiaExiste = nomeItens.includes("Relíquia de Zordon");
+
+console.log(reliquiaExiste);
+
