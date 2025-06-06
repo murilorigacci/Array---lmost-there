@@ -75,4 +75,11 @@ console.log(`Depois de remover:`, inventarioBeta);
 // 3. Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
 
 inventarioAlpha.push(`Peças cerâmicas, Ferramentas talhadas em ossos, Itens de adorno pessoal, 7900`)
+
 console.log(`Depois de adicionar:`, inventarioAlpha);
+
+// 4. Dois artefatos especiais de Kepler foram coletados e adicionados à nave Beta.
+
+inventarioBeta.push(`Estrela, Buraco negro, 11000`)
+
+console.log(`Depois de adicionar:`, inventarioBeta);
