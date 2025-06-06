@@ -64,6 +64,8 @@ console.log(`Item removido: ${itemRemovido}`);
 
 console.log(`Depois do remover:`, inventarioAlpha);
 
+console.table(inventarioAlpha)
+
 // 2. Um artefato obsoleto foi removido do final da lista Beta após avaliação técnica.
 
 let itemRemovidoBeta = inventarioBeta.pop()
@@ -72,14 +74,36 @@ console.log(`Item removido: ${itemRemovidoBeta}`);
 
 console.log(`Depois de remover:`, inventarioBeta);
 
+console.table(inventarioBeta)
+
 // 3. Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
 
-inventarioAlpha.push(`Peças cerâmicas, Ferramentas talhadas em ossos, Itens de adorno pessoal, 7900`)
+inventarioAlpha.push(
+    ["Peças cerâmicas", "Terra", 45000],
+     ["Ferramentas talhadas em ossos", "Terra", 8900],
+     ["Itens de adorno pessoal", 7900]
+)
 
 console.log(`Depois de adicionar:`, inventarioAlpha);
 
+console.table(inventarioAlpha)
+
 // 4. Dois artefatos especiais de Kepler foram coletados e adicionados à nave Beta.
 
-inventarioBeta.push(`Estrela, Buraco negro, 11000`)
+inventarioBeta.push(
+    ["Estrela", "Kepler", 7600], 
+    ["Buraco negro", "Kepler", 11000]
+)
 
 console.log(`Depois de adicionar:`, inventarioBeta);
+
+console.table(inventarioBeta)
+
+// 5. Um item da Alpha precisa aparecer no topo da lista para ser destacado na vitrine
+
+let itemRemovido2 = inventarioAlpha.pop()
+
+inventarioAlpha.unshift(["Itens de adorno pessoal", 7900])
+console.log(`Depois de dar prioridade ao item:`, inventarioAlpha);
+
+console.table(inventarioAlpha)
