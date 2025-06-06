@@ -107,3 +107,12 @@ inventarioAlpha.unshift(["Itens de adorno pessoal", 7900])
 console.log(`Depois de dar prioridade ao item:`, inventarioAlpha);
 
 console.table(inventarioAlpha)
+
+// 6. Um item da Beta deve ser promovido para o início da lista para estudo prioritário.
+
+let itemRemovido3 = inventarioBeta.pop()
+
+inventarioBeta.unshift(["Terminal de Dobra", "Alpha Centauri", 10500])
+console.log(`Depois de dar prioridade ao item:`, inventarioBeta);
+
+console.table(inventarioBeta)
